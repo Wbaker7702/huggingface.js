@@ -68,6 +68,8 @@ packages:
   jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
 
+  lru-cache@11.3.2:
+    resolution: {integrity: sha512-wgWa6FWQ3QRRJbIjbsldRJZxdxYngT/dO0I5Ynmlnin8qy7tC6xYzbcJjtN4wHLXtkbVwHzk0C+OejVw1XM+DQ==}
   lru-cache@11.2.7:
     resolution: {integrity: sha512-aY/R+aEsRelme17KGQa/1ZSIpLpNYYrhcrepKTZgE+W3WM16YMCaPwOHLHsmopZHELU0Ojin1lPVxKR0MihncA==}
   lru-cache@11.2.6:
@@ -82,6 +84,8 @@ packages:
     engines: {node: '>= 12'}
     hasBin: true
 
+  minimatch@10.2.5:
+    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
   minimatch@10.2.4:
     resolution: {integrity: sha512-oRjTw/97aTBN0RHbYCdtF1MQfvusSIBQM0IZEgzl6426+8jSC0nF1a/GmnVLpfB9yyr6g6FTqWqiZVbxrtaCIg==}
     engines: {node: 18 || 20 || >=22}
@@ -169,6 +173,12 @@ snapshots:
       balanced-match: 1.0.2
 
   brace-expansion@5.0.5:
+    dependencies:
+      balanced-match: 4.0.4
+
+  glob@13.0.6:
+    dependencies:
+      minimatch: 10.2.5
   brace-expansion@2.0.2:
     dependencies:
       balanced-match: 1.0.2
@@ -194,6 +204,7 @@ snapshots:
 
   jsonc-parser@3.2.0: {}
 
+  lru-cache@11.3.2: {}
   lru-cache@11.2.7: {}
   lru-cache@11.2.6: {}
 
@@ -201,6 +212,9 @@ snapshots:
 
   marked@4.3.0: {}
 
+  minimatch@10.2.5:
+    dependencies:
+      brace-expansion: 5.0.5
   minimatch@10.2.4:
     dependencies:
       brace-expansion: 5.0.5
@@ -218,6 +232,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
+      lru-cache: 11.3.2
       lru-cache: 11.2.7
       lru-cache: 11.2.6
       minipass: 7.1.3
