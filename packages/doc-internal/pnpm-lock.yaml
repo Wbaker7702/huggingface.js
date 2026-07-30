@@ -13,6 +13,7 @@ importers:
         version: 13.0.6
       yaml:
         specifier: ^2.2.2
+        version: 2.8.4
         version: 2.8.3
         version: 2.8.2
     devDependencies:
@@ -68,6 +69,8 @@ packages:
   jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
 
+  lru-cache@11.3.5:
+    resolution: {integrity: sha512-NxVFwLAnrd9i7KUBxC4DrUhmgjzOs+1Qm50D3oF1/oL+r1NpZ4gA7xvG0/zJ8evR7zIKn4vLf7qTNduWFtCrRw==}
   lru-cache@11.3.2:
     resolution: {integrity: sha512-wgWa6FWQ3QRRJbIjbsldRJZxdxYngT/dO0I5Ynmlnin8qy7tC6xYzbcJjtN4wHLXtkbVwHzk0C+OejVw1XM+DQ==}
   lru-cache@11.2.7:
@@ -149,6 +152,8 @@ packages:
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
+  yaml@2.8.4:
+    resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
   yaml@2.8.3:
     resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
   yaml@2.8.2:
@@ -179,6 +184,10 @@ snapshots:
   glob@13.0.6:
     dependencies:
       minimatch: 10.2.5
+
+  glob@13.0.6:
+    dependencies:
+      minimatch: 10.2.5
   brace-expansion@2.0.2:
     dependencies:
       balanced-match: 1.0.2
@@ -204,6 +213,7 @@ snapshots:
 
   jsonc-parser@3.2.0: {}
 
+  lru-cache@11.3.5: {}
   lru-cache@11.3.2: {}
   lru-cache@11.2.7: {}
   lru-cache@11.2.6: {}
@@ -232,6 +242,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
+      lru-cache: 11.3.5
       lru-cache: 11.3.2
       lru-cache: 11.2.7
       lru-cache: 11.2.6
@@ -272,5 +283,6 @@ snapshots:
 
   wordwrap@1.0.0: {}
 
+  yaml@2.8.4: {}
   yaml@2.8.3: {}
   yaml@2.8.2: {}
